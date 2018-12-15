@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "deamon.h"
+#include "daemon.h"
 
 #include <Tlhelp32.h>
 
@@ -115,7 +115,7 @@ int APIENTRY _tWinMain(_In_ HINSTANCE hInstance,
         CloseHandle(hMutex);
     }
 
-	hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_DEAMON));
+	hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_DAEMON));
 
 	// 主消息循环: 
 	while (GetMessage(&msg, NULL, 0, 0))
@@ -151,7 +151,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 	wcex.hIcon			= LoadIcon(hInstance, MAKEINTRESOURCE(IDI_DEAMON));
 	wcex.hCursor		= LoadCursor(NULL, IDC_ARROW);
 	wcex.hbrBackground	= (HBRUSH)(COLOR_WINDOW+1);
-	wcex.lpszMenuName	= MAKEINTRESOURCE(IDC_DEAMON);
+	wcex.lpszMenuName	= MAKEINTRESOURCE(IDC_DAEMON);
 	wcex.lpszClassName	= szWindowClass;
 	wcex.hIconSm		= LoadIcon(wcex.hInstance, MAKEINTRESOURCE(IDI_SMALL));
 
