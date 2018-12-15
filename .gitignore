@@ -1,2 +1,5 @@
 *.suo
-/deamon/*.user
+/daemon/*.user
+/daemon/Debug/*.*
+/daemon/Release/*.*
+/daemon.VC.db
